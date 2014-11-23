@@ -15,4 +15,9 @@ public class StrToken extends Token{
     public String getString() {
         return mString;
     }
+    
+    @Override
+    public String getCommonValue() {
+        return mString;
+    }
 }

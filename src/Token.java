@@ -3,8 +3,10 @@
 //number: 123
 //string: "abc"
 
-public abstract class Token {
+public class Token {
 	private int mLineNumber;
+	private int mFlag  = 0;
+	public static final int EOF = 1;
 	protected Token(int lineNumber) {
 		mLineNumber = lineNumber;
 	}
@@ -36,4 +38,16 @@ public abstract class Token {
 	public String getString() {
 	    return "";
 	}
-}
+	
+	public String getCommonValue() {
+	    return "";
+	}
+	
+	public void setFlag(int flag) {
+	    mFlag |= flag;
+	}
+	
+	public int getFlag() {
+	    return mFlag;
+	}
+} 

@@ -15,4 +15,9 @@ public class IDToken extends Token {
     public String getIdentifier() {
         return mString;
     }
+    
+    @Override
+    public String getCommonValue() {
+        return mString;
+    }
 }

@@ -15,4 +15,9 @@ public class NumToken extends Token{
     public int getNumber() {
         return mNumber;
     }
+    
+    @Override
+    public String getCommonValue() {
+        return "" + mNumber;
+    }
 }
